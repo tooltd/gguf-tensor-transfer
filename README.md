@@ -1,6 +1,6 @@
 # GGUF Tensor Transfer
 
-A Windows GUI tool for surgical tensor transfer between GGUF files: pick a
+A GUI tool for surgical tensor transfer between GGUF files: pick a
 **donor** (A), a **base** (B), and produce a new file **C** where the tensors
 you selected are taken from A while everything else stays from B — streamed
 straight to disk without loading tensors into RAM.
@@ -60,8 +60,6 @@ python gguf_transfer_gui.py
 2. Select tensors: click the ✓ column, or use **Select all (in A)** /
    **Clear selection**.
 3. Set the **C** output path → **Apply → write C**.
-   - The Apply button disables while writing; **Cancel** aborts and removes
-     the partial file.
    - The progress bar ticks in ~32 MB steps with a live MB/s readout.
    - After the write, a quick verification runs automatically (tensor count,
      total size, 1 KB spot check of every donor-sourced tensor).
