@@ -84,8 +84,3 @@ Files are streamed in 256 MB chunks through a two-thread pipeline, so a
 | `gguf_transfer_gui.py` | GUI + plan/write/verify core (core is importable, GUI-free) |
 | `_gguf_fast.py` | Minimal streaming GGUF header parser/builder (stdlib only) |
 
-## Notes
-
-- Output C must be a different path from A and B.
-- On a mechanical HDD, transfer speed is bounded by the drive
-  (~50–150 MB/s depending on fragmentation); the GUI only reports it.
