@@ -9,6 +9,8 @@ Built for the Qwen3.5/Qwen3.6 **MTP** workflow (grafting an `blk.64`
 nextn block between quantized models), but works with any GGUF pair that
 shares the same architecture.
 
+![GGUF Tensor Transfer UI](screenshots/ui.png)
+
 ## What it does
 
 For every tensor in B, the table shows where C will get it from:
